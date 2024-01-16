@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: Roboto;
+}
+
+/* ---------------------- Header start ---------- */
+header{
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+    padding: 45px 0 45px;
+}
+
+.nav__item {
+    cursor: pointer;
+}
+
+.nav__link {
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav__link:hover {
+    color: #DBB500;
+}
+
+.nav__tell {
+    color: rgb(207, 175, 175);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.81px;
+}
+
+.nav__tell:hover {
+    color: #DBB500;
+}
+/* ---------------- Header End ------------ */
+
+/* ----------------- Intro section -------- */
+.intro {
+    background: black;
+    
+}
+
+.intro__wrapp {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 300px;
+    background-image: url(../images/intro/kisspng-autonomous-republic-of-crimea-crimean-people-s-rep-5af46f1fed8ca3\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.intro__tittle {
+    color: #ffffff;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -3.15px;
+    padding-bottom: 48px;
+}
+
+.intro__tittle span   {
+    color: #D4CC7B;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -3.15px;
+}
+
+.intro__text {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1.35px;
+    padding-bottom: 48px;
+}
+
+.intro__btn {
+    border-radius: 30px;
+    background: linear-gradient(280deg, #FFF -23.59%, #DBB500 115.07%);
+    box-shadow: 0px 0px 20px 0px #D6A500;
+    padding: 20px 55px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1.08px;
+    z-index: 5;
+}
+
+.intro__btn:hover {
+    background: black;
+    border-color: #D6A500;
+    color: #DBB500;
+}
+
+.intro__big-img {
+    position: absolute;
+    top: 100px;
+}
+
+.intro__car {
+    position: absolute;
+    top: 35%;
+    left: 400px;
+}
+
+.intro__svg {
+    /* text-align: center; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* justify-content: center; */
+   padding-bottom: 170px;
+}
+/* ------------------------ Intro End ------------------ */
+
+/* ------------------------ Cards start ----------------  */
+.cards {
+    background-color: #000;
+    
+}
+
+.cards__tittle {
+    text-align: center;
+    color: #D4CC7B;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -2.16px;
+    padding-bottom: 75px;
+}
+
+.cards__wrapper {
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+.car-about {
+    width: 380px;
+    border: solid 1px #363333;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #000;
+    z-index: 5;
+}
+
+.car-about__tittle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.car-about__tittle p {
+    color: white;
+    font-family: Muller;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.08px;
+}
+
+.car-about__tittle__text span {
+    color: #D6A500;
+    font-family: Muller;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.08px;
+
+}
+
+.transmission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 25px 25px;
+}
+
+.car-about__h4 {
+    color: #FFF;
+    font-family: Muller;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1.08px;
+    z-index: 1;
+}
+
+
+.car-about__btn {
+    margin: 35px 0 25px 0;
+    border-radius: 30px;
+    background-color: black;
+    box-shadow: 0px 0px 20px 0px #D6A500;
+    padding: 20px 55px;
+    color: #DBB500;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1.08px;
+    z-index: 5;
+    transition: all 0.4s;
+}
+
+.car-about__btn:hover {
+    background: linear-gradient(280deg, #FFF -23.59%, #DBB500 115.07%);
+    border-color: #D6A500;
+    color: #000;
+    transition: all 0.4s;
+}
+
+
+.bkg__bmw {
+    position: absolute;
+    top: 180px;
+    left: -125px;
+}
+
+.mers {
+    position: absolute;
+    top: 750px;
+    right: -110px;
+}
+
+.kia {
+    position: absolute;
+    top: 1550px;
+    left: -120px;
+}
+
+.vw {
+    position: absolute;
+    top: 1900px;
+    right: 280px;
+}
+/* ------------------------- Cards End ---------------- */
+
+/* ------------------------- Conditions start -------- */
+.conditions {
+    background: #161616;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    height: 825px;
+}
+ 
+.arenda {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.condition__tittle {
+    color: #D6A500;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -2.16px;
+    text-align: center;
+}
+
+.arenda__text {
+    color: #FFF;
+    text-align: center;
+    font-family: Muller;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.08px;
+    padding-top: 15px;
+}
+
+.arenda__btn {
+    border-radius: 30px;
+    background: linear-gradient(280deg, #FFF -23.59%, #DBB500 115.07%);
+    box-shadow: 0px 0px 20px 0px #D6A500;
+    padding: 20px 55px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1.08px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.arenda__btn:hover {
+    background: black;
+    border-color: #D6A500;
+    color: #DBB500;
+}
+
+.arenda__bmw {
+    position: absolute;
+    left: -50px;
+}
+/* --------------------------- Conditions End ---------- */
+
+/* --------------------------- Footer ----------- */
+footer{
+    background-color: black;
+}
+
+.footer__wrapp {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.footer__left {
+    width: 410px;
+}
+
+.footer__left img {
+    padding-top: 45px;
+}
+
+.footer__left__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 35px;
+}
+
+.footer__left__text {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.08px
+    
+}
+
+
+.medium__tittle {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 127.5%; 
+    letter-spacing: -1.08px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.medium {
+    width: 300px;
+}
+
+.medium__text {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 127.5%; 
+    letter-spacing: -1.08px;
+    padding-bottom: 25px;
+}
+
+.contakt {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.telephone {
+    display: flex;
+    flex-direction: column;
+}
+
+.telephone a {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.08px;
+}
+
+.telephone a:hover {
+    color: #D6A500;
+}
+
+
+.right {
+    padding-top: 130px;
+    width: 225px;
+}
+
+.right__tittle {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 127.5%;
+    letter-spacing: -1.08px;
+    padding-bottom: 25px;
+}
+
+.right__icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+
+}
+
+.right__text {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 127.5%; 
+    letter-spacing: -0.81px;
+}
